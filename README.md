@@ -1,3 +1,5 @@
-Handwriting to Text App. 
+This code trains a neural network model using the MNIST dataset to recognize handwritten digits. It first loads and normalizes the dataset, then constructs a sequential model using TensorFlow's Keras API with two hidden layers of 128 neurons each and an output layer with 10 neurons (one for each digit). The model is compiled with the Adam optimizer and sparse categorical cross-entropy loss. After training for 7 epochs, it evaluates the model's performance on the test set and saves the model to disk. 
 
-Based on Deep Learning Models.
+![download](https://github.com/ShalvSrivastava/Handwriting_to_text/assets/111503932/2eb927f8-d557-48a1-a2cf-cb694888d077)
+
+Then, it loads the saved model and iterates through a series of digit images, each stored as a PNG file. For each image, it preprocesses the image, makes a prediction using the loaded model, and displays the image along with the predicted digit. If there's an error reading the image, it proceeds to the next one. Overall, the code demonstrates training and using a neural network model for handwritten digit recognition.
